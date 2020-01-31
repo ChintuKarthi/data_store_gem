@@ -1,7 +1,6 @@
 # Data Store Gem (Ruby)
 
-This Gem is used as a client end point to Create, Read and Delete the Key-Value from the Data Store using ruby inbuild Pstore.
-PStore implements a file based persistence mechanism based on a Hash
+A library(Gem) which can be used to create, read and delete the key value pair in the local datastore. It uses Ruby's inbuilt Pstore (a file based persistence mechanism based on a Hash)
 
 ## Compatibility
 
@@ -15,7 +14,7 @@ To install the Gem, first bclone it locally by using the git clone command
 ```
 git clone https://github.com/ChintuKarthi/data_store_gem
 ```
-Once cloned, the follow the steps mentioned below to install the gem locally.
+Once cloned, then follow the steps mentioned below to install the gem locally.
 
 Step 1: cd to the cloned repo.
 ```
@@ -50,8 +49,6 @@ From here, we need to require the Gem to use start using it's features. It can b
 ```
 require 'data_store_gem'
 ```
-Next step is setting up the optional file path.
-If needed it can be set, else it will take the same directory where the gem is installed.
 
 Our client End point is the below one
 ```
@@ -62,6 +59,7 @@ the method_name is replaced by the end points the user wishes to access.
 # Setting up the File Path
 
   To set the file path, the following end point is used.
+  If needed it can be set, else it will take the same directory where the gem is installed.
   ```
   DataStore::KeyValue.file_path(path)
   ```

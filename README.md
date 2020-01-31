@@ -1,6 +1,7 @@
 # Data Store Gem (Ruby)
 
-This Gem is used as a client end point to Create, Read and Delete the Key-Value from the Data Store.
+This Gem is used as a client end point to Create, Read and Delete the Key-Value from the Data Store using ruby inbuild Pstore.
+PStore implements a file based persistence mechanism based on a Hash
 
 ## Compatibility
 

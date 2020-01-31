@@ -2,7 +2,7 @@
 
 This Gem is used as a client end point to Create, Read and Delete the Key-Value from the Data Store.
 
-##Compatibility
+## Compatibility
 
 This Gem is developed under MacOS with ruby version - 2.6.3p62.
 

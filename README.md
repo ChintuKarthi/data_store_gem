@@ -20,13 +20,19 @@ Step 1: cd to the cloned repo.
 ```
 cd data_store_gem
 ```
-Step 2: Run the below command to load the gem.
+Step 2: Install gem dependencies by running following command.
+```
+bundle install
+```
+This will install the required gem for our client from rubygems.org
+
+Step 3: Run the below command to load the gem.
 ```
 gem build data_store.gemspec
 ```
 This command loads the latest gem changes.
 
-Step 3: Run the below command from the gem root directory to install the gem locally
+Step 4: Run the below command from the gem root directory to install the gem locally
 ```
 gem install ./data_store_gem-1.0.0.gem
 ```
@@ -60,7 +66,7 @@ the method_name is replaced by the end points the user wishes to access.
   ```
   Where the path is the variable which is the local directory path followed by the file name at the end.
   ```
-  example: /Users/username/Desktop/test/test.pstore
+  example: '/Users/username/Desktop/test/test.pstore'
   ```
   Calling this end point will over ride the default file path.
 
@@ -109,3 +115,10 @@ the method_name is replaced by the end points the user wishes to access.
     It assumes the key is already there in the data store. If not appropriate error message is thrown.
     If time_to_live property is set and expired, the key won't be accessible to delete the value.
 
+# Test Cases
+  The gem 'rspec' handles all the test cases written under the spec folder.
+  To run the test cases, run the following command from the root directory of the gem.
+  ```
+    rspec spec
+  ```
+  This command will trigger all the test cases under the spec folder.

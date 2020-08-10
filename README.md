@@ -121,3 +121,7 @@ the method_name is replaced by the end points the user wishes to access.
     rspec spec
   ```
   This command will trigger all the test cases under the spec folder.
+  
+# License
+
+  This gem is protected by MIT [License](LICENSE).
